@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lotus Herbals - Natural Beauty Products</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      @keyframes fadeUp {
+        from {
+          opacity: 0;
+          transform: translateY(20px);
+        }
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+      /* Custom green theme inspired by Lotus Herbals */
+      .bg-lotus-green {
+        background-color: #4caf50;
+      }
+      .text-lotus-green {
+        color: #4caf50;
+      }
+      .hover-lotus-green:hover {
+        background-color: #388e3c;
+      }
+    </style>
+  </head>
+  <body class="bg-gray-50 text-gray-900">
+    <!-- HEADER -->
+    <header class="bg-lotus-green text-white sticky top-0 z-50">
+      <nav
+        class="max-w-7xl mx-auto flex justify-between items-center py-4 px-6"
+      >
+        <h1 class="text-2xl font-bold">Lotus Herbals</h1>
+        <ul class="hidden md:flex gap-8 text-lg">
+          <li><a href="#" class="hover:text-yellow-300">Home</a></li>
+          <li>
+            <a href="#categories" class="hover:text-yellow-300">Categories</a>
+          </li>
+          <li>
+            <a href="#products" class="hover:text-yellow-300">Products</a>
+          </li>
+          <li><a href="#about" class="hover:text-yellow-300">About</a></li>
+          <li><a href="#footer" class="hover:text-yellow-300">Contact</a></li>
+        </ul>
+        <button class="md:hidden text-2xl">&#9776;</button>
+      </nav>
+    </header>
+
+    <!-- HERO -->
+    <section
+      class="h-[60vh] md:h-[70vh] flex items-center justify-center px-8 bg-cover bg-center text-white animate-[fadeUp_1s_ease-out] relative"
+      style="
+        background-image: url('https://images.pexels.com/photos/2533266/pexels-photo-2533266.jpeg?auto=compress');
+      "
+    >
+      <div class="bg-black bg-opacity-50 p-8 rounded-lg text-center">
+        <h2 class="text-3xl md:text-5xl font-bold max-w-xl mb-4">
+          Discover Natural Beauty with Lotus Herbals
+        </h2>
+        <p class="text-lg md:text-xl">
+          Herbal, Ayurvedic skincare for radiant, healthy skin.
+        </p>
+        <a
+          href="#products"
+          class="inline-block mt-6 bg-lotus-green text-white py-3 px-8 rounded-lg hover-lotus-green transition"
+          >Shop Now</a
+        >
+      </div>
+    </section>
+
+    <!-- CATEGORIES -->
+    <section id="categories" class="max-w-7xl mx-auto px-6 py-12">
+      <h2 class="text-3xl font-bold mb-8 text-center text-lotus-green">
+        Explore Categories
+      </h2>
+      <div class="grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
+        <div
+          class="bg-white rounded-xl shadow-md p-6 text-center hover:shadow-xl transition transform hover:scale-105 animate-[fadeUp_0.8s_ease-out]"
+        >
+          <img
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTaWyj-S72wJr22O2VsYw8086qwcKjmaN_tow&s"
+            class="w-24 h-24 mx-auto mb-4 rounded-full"
+          />
+          <h3 class="text-xl font-semibold">Skincare</h3>
+          <p class="text-gray-600 mt-2">
+            Herbal serums and creams for glowing skin.
+          </p>
+          <a
+            href="skincare.html"
+            class="inline-block mt-4 bg-lotus-green text-white py-2 px-4 rounded-lg hover-lotus-green"
+            >Explore</a
+          >
+        </div>
+        <div
+          class="bg-white rounded-xl shadow-md p-6 text-center hover:shadow-xl transition transform hover:scale-105 animate-[fadeUp_0.9s_ease-out]"
+        >
+          <img
+            src="https://www.brandbucket.com/sites/default/files/logo_uploads/345115/large_hairsecret.png"
+            class="w-24 h-24 mx-auto mb-4 rounded-full"
+          />
+          <h3 class="text-xl font-semibold">Haircare</h3>
+          <p class="text-gray-600 mt-2">Natural oils for strong, shiny hair.</p>
+          <a
+            href="haircare.html"
+            class="inline-block mt-4 bg-lotus-green text-white py-2 px-4 rounded-lg hover-lotus-green"
+            >Explore</a
+          >
+        </div>
+        <div
+          class="bg-white rounded-xl shadow-md p-6 text-center hover:shadow-xl transition transform hover:scale-105 animate-[fadeUp_1s_ease-out]"
+        >
+          <img
+            src="https://cdn.britannica.com/35/222035-050-C68AD682/makeup-cosmetics.jpg"
+            class="w-24 h-24 mx-auto mb-4 rounded-full"
+          />
+          <h3 class="text-xl font-semibold">Makeup</h3>
+          <p class="text-gray-600 mt-2">
+            Herbal-based makeup for natural beauty.
+          </p>
+          <a
+            href="makeup.html"
+            class="inline-block mt-4 bg-lotus-green text-white py-2 px-4 rounded-lg hover-lotus-green"
+            >Explore</a
+          >
+        </div>
+        <div
+          class="bg-white rounded-xl shadow-md p-6 text-center hover:shadow-xl transition transform hover:scale-105 animate-[fadeUp_1.1s_ease-out]"
+        >
+          <img
+            src="https://i-media.vyaparify.com/vcards/blogs/170929/Health.jpg"
+            class="w-24 h-24 mx-auto mb-4 rounded-full"
+          />
+          <h3 class="text-xl font-semibold">Wellness</h3>
+          <p class="text-gray-600 mt-2">
+            Ayurvedic products for overall health.
+          </p>
+          <a
+            href="wellness.html"
+            class="inline-block mt-4 bg-lotus-green text-white py-2 px-4 rounded-lg hover-lotus-green"
+            >Explore</a
+          >
+        </div>
+      </div>
+    </section>
+
+    <!-- PRODUCTS -->
+    <section id="products" class="max-w-7xl mx-auto px-6 py-12 bg-white">
+      <h2 class="text-3xl font-bold mb-8 text-center text-lotus-green">
+        Trending Products
+      </h2>
+      <div class="grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
+        <!-- WhiteGlow Face Wash -->
+        <div
+          class="bg-gray-50 rounded-xl shadow-md p-5 text-center hover:shadow-xl transition transform hover:scale-105 animate-[fadeUp_0.8s_ease-out]"
+        >
+          <img
+            src="https://m.media-amazon.com/images/I/71JrVAmOClL._AC_UF1000,1000_QL80_.jpg"
+            class="w-full h-64 object-cover rounded-lg"
+          />
+          <h3 class="text-xl font-semibold mt-4">Glow Serum</h3>
+          <p class="text-gray-600 mt-2">
+            Gives instant glow and hydrates your skin.
+          </p>
+          <a
+            href="#"
+            class="inline-block mt-4 bg-lotus-green text-white py-2 px-6 rounded-lg hover-lotus-green"
+            >Buy Now</a
+          >
+        </div>
+
+        <!-- Herbal Healthcare Soap -->
+        <div
+          class="bg-gray-50 rounded-xl shadow-md p-5 text-center hover:shadow-xl transition transform hover:scale-105 animate-[fadeUp_0.9s_ease-out]"
+        >
+          <img
+            src="https://media.allure.com/photos/68e04a6bad79d7a4fb0a7d8b/1:1/w_2700,h_2700,c_limit/10.02_ALL_8_Best_Face_Washes_for_Melting_Makeup,Sweat,andOil.jpg"
+            class="w-full h-64 object-cover rounded-lg"
+          />
+          <h3 class="text-xl font-semibold mt-4">Face Cleanser</h3>
+          <p class="text-gray-600 mt-2">
+            Deep cleanses and removes impurities.
+          </p>
+          <a
+            href="#"
+            class="inline-block mt-4 bg-lotus-green text-white py-2 px-6 rounded-lg hover-lotus-green"
+            >Buy Now</a
+          >
+        </div>
+
+        <!-- Almond Cream -->
+        <div
+          class="bg-gray-50 rounded-xl shadow-md p-5 text-center hover:shadow-xl transition transform hover:scale-105 animate-[fadeUp_1s_ease-out]"
+        >
+          <img
+            src="https://vivecosmetic.com/wp-content/uploads/2024/11/Night-cream-for-glow-300x300.jpg"
+            class="w-full h-64 object-cover rounded-lg"
+          />
+          <h3 class="text-xl font-semibold mt-4">Night Cream</h3>
+          <p class="text-gray-600 mt-2">
+            Repairs skin overnight for a fresh morning look..
+          </p>
+          <a
+            href="#"
+            class="inline-block mt-4 bg-lotus-green text-white py-2 px-6 rounded-lg hover-lotus-green"
+            >Buy Now</a
+          >
+        </div>
+
+        <!-- Neem & Turmeric Face Pack -->
+        <div
+          class="bg-gray-50 rounded-xl shadow-md p-5 text-center hover:shadow-xl transition transform hover:scale-105 animate-[fadeUp_1.1s_ease-out]"
+        >
+          <img
+            src="https://ec.nice-cdn.com/upload/image/product/large/default/benecos-natural-lip-balm-1397494-en.jpg"
+            class="w-full h-64 object-cover rounded-lg"
+          />
+          <h3 class="text-xl font-semibold mt-4">benecos Natural Lip Balm</h3>
+          <p class="text-gray-600 mt-2">
+            Keeps your lips hydrated & soft all day.
+          </p>
+          <a
+            href="#"
+            class="inline-block mt-4 bg-lotus-green text-white py-2 px-6 rounded-lg hover-lotus-green"
+            >Buy Now</a
+          >
+        </div>
+
+        <!-- Onion Hair Oil -->
+        <div
+          class="bg-gray-50 rounded-xl shadow-md p-5 text-center hover:shadow-xl transition transform hover:scale-105 animate-[fadeUp_1.2s_ease-out]"
+        >
+          <img
+            src="https://enwish.in/wp-content/uploads/2022/08/Onion_Oil_Square_Post.jpg"
+            class="w-full h-64 object-cover rounded-lg"
+          />
+          <h3 class="text-xl font-semibold mt-4">Red Onion Organic Hair Oil</h3>
+          <p class="text-gray-600 mt-2">
+            Promotes hair growth with herbal extracts.
+          </p>
+          <a
+            href="#"
+            class="inline-block mt-4 bg-lotus-green text-white py-2 px-6 rounded-lg hover-lotus-green"
+            >Buy Now</a
+          >
+        </div>
+
+        <!-- Herbal Deodorant -->
+        <div
+          class="bg-gray-50 rounded-xl shadow-md p-5 text-center hover:shadow-xl transition transform hover:scale-105 animate-[fadeUp_1.3s_ease-out]"
+        >
+          <img
+            src="https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcTJKl32knRSpMsvM7R8Q-BJXvHWKnyjcCNFsV5JMlos3mNcuXTabqbwEDLS79bK9JivAQfKfivRSqydtrZ8FuJNG7XCq13p4n0Scce6EAB_lZJT-5SguHpAJ6w"
+            class="w-full h-64 object-cover rounded-lg"
+          />
+          <h3 class="text-xl font-semibold mt-4">Herbal Deodorant</h3>
+          <p class="text-gray-600 mt-2">Natural fragrance with aloe vera.</p>
+          <a
+            href="#"
+            class="inline-block mt-4 bg-lotus-green text-white py-2 px-6 rounded-lg hover-lotus-green"
+            >Buy Now</a
+          >
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="max-w-7xl mx-auto px-6 py-12 bg-gray-100">
+      <div class="text-center">
+        <h2 class="text-3xl font-bold mb-6 text-lotus-green">
+          About Lotus Herbals
+        </h2>
+        <p class="text-lg text-gray-700 max-w-4xl mx-auto">
+          Lotus Herbals is committed to providing natural, Ayurvedic beauty
+          solutions. Inspired by ancient Indian wisdom, our products harness the
+          power of herbs like neem, turmeric, and aloe vera for healthy, radiant
+          skin and hair.
+        </p>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer id="footer" class="bg-lotus-green text-gray-200 py-12 mt-12">
+      <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8 px-6">
+        <div>
+          <h3 class="text-xl font-bold mb-4 text-white">Lotus Herbals</h3>
+          <p>Your go-to for natural beauty products rooted in Ayurveda.</p>
+        </div>
+        <div>
+          <h3 class="text-xl font-bold mb-4 text-white">Quick Links</h3>
+          <ul class="space-y-2">
+            <li><a href="#" class="hover:text-white">Home</a></li>
+            <li>
+              <a href="#categories" class="hover:text-white">Categories</a>
+            </li>
+            <li><a href="#products" class="hover:text-white">Products</a></li>
+            <li><a href="#about" class="hover:text-white">About</a></li>
+            <li><a href="#footer" class="hover:text-white">Contact</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3 class="text-xl font-bold mb-4 text-white">Contact</h3>
+          <p>Email: support@lotusherbals.com</p>
+          <p>Phone: +91 1800 123 4567</p>
+          <p>Follow us on social media for tips and offers!</p>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
