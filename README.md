@@ -208,9 +208,4 @@ Credits
 
 ---
 
-If you want, I can:
-- Add the screenshot files to the repository and update README with correct relative paths.
-- Create a branch that replaces CDN Tailwind with a built stylesheet and a package.json script for building.
-- Create a basic `products.json` file and a script to generate category pages from data.
-
-Thank you — let me know which of the follow-ups above I should implement next and I’ll prepare the changes.
+Thank you —
